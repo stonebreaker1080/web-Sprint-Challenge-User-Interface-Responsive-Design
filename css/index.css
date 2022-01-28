@@ -73,6 +73,42 @@ section, footer{
     margin: 0 auto;
 }
 
+hr{
+    border-top: 1px solid #ff4b00;
+}
+
+/*Header Section Styles*/
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 2% auto 3% auto;
+}
+
+header .container a {
+    text-decoration: none;
+    width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+header .container a img {
+    width: 40%;
+    
+    
+}
+
+/* Banner Image */
+
+.banner_image {
+    display: flex;
+    align-content: normal;
+    justify-content: center;
+    align-items: stretch;
+}
+
 /*Top Section Styles*/
 
 .top-content {
@@ -80,7 +116,7 @@ section, footer{
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 4%;
-    border-bottom: 2px solid #ff4b00;
+    border-bottom: 1% solid #ff4b00;
     text-align: justify;
 }
 
@@ -90,9 +126,14 @@ section, footer{
     padding-bottom: 4%;  
 }
 
+.top-content .text-container h2{
+    text-align: center;
+}
+
 /*Middle Section Styles*/
 .middle-content {
     margin-bottom: 4%;
+    border-bottom: 1% solid #ff4b00;
 }
 
 .middle-content h2 {
@@ -102,7 +143,9 @@ section, footer{
 .middle-content .boxes {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-between;
+    padding: 2% 30%;
 }
 
 .middle-content .boxes .box {
@@ -112,7 +155,49 @@ section, footer{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 5% 5%;
 }
+
+#box1 {
+    background: teal;    
+}
+
+#box2 {
+    background: gold;    
+}
+
+#box3 {
+    background: cadetblue;    
+}
+
+#box4 {
+    background: coral;    
+}
+
+#box5 {
+    background: crimson;    
+}
+
+#box6 {
+    background: forestgreen;    
+}
+
+#box7 {
+    background: darkorchid;    
+}
+
+#box8 {
+    background: hotpink;    
+}
+
+#box9 {
+    background: indigo;    
+}
+
+#box10 {
+    background: dodgerblue;    
+}
+
 
 /*Bottom Section Styles*/
 .bottom-content {
@@ -134,7 +219,82 @@ footer {
     background-color: #ff4b00;
 }
 
+footer .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 20px auto auto auto;
+}
+
+footer .container nav a {
+    text-decoration: none;
+    padding: 0 20px;
+    color: white;
+}
+
 /*About Page Styles*/
 
+.about-page {
+    padding: 5% 10%;
+    margin: 1% auto;
+    border-bottom: 2px solid #ff4b00;
+    width: 70%;
+}
 
+.subsection-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.subsection {
+    padding: 5% 10%;
+    width: 50%;
+}
+
+.subsection p {
+    border-bottom: 2px solid #ff4b00;
+    padding-bottom: 5%;
+}
+
+.subsection img {
+    width: 50%;
+}
+
+.together {
+    padding: 5% 10%;
+    margin: 1% auto;
+    width: 70%;
+}
+
+.about_footer {
+    background-color: #ff4b00;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.about_footer nav {
+    
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+
+.about_footer nav a {
+    text-decoration: none;
+    color: white;
+    padding: 5% 5%;
+}
 /*Responsive Styles*/
+
+@media(max-width: 500px){
+    .subsection-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    
+}
