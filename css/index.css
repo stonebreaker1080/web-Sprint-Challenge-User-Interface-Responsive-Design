@@ -73,6 +73,44 @@ section, footer{
     margin: 0 auto;
 }
 
+/*Nav Bar Styles - entered by kyle hauenstein*/
+
+nav {
+    width: 80%;
+    margin: 2% 10%;
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;    
+}
+
+.logo {
+    width: 30%;
+}
+
+.logo img {
+    width: 100%;
+    margin-top: 3%;
+}
+
+.links {
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.links a {
+    text-decoration: none;
+    margin: 1% 2%;
+}
+
+/*banner image styles- added by kyle hauenstein*/
+.banner_image{
+    width: 80%;
+    margin: 5% auto;
+}
+.banner_image img{
+    width: 100%;
+}
+
 /*Top Section Styles*/
 
 .top-content {
@@ -90,9 +128,21 @@ section, footer{
     padding-bottom: 4%;  
 }
 
+/*Top Section Styles - added by kyle hauenstein*/
+
+.top-content .text-container {
+    width: 45%;
+    margin: 0 auto;
+}
+
+.top-content .text-container h2 {
+    text-align: center;
+}
+
 /*Middle Section Styles*/
 .middle-content {
     margin-bottom: 4%;
+    border-bottom: 2px solid #ff4b00;
 }
 
 .middle-content h2 {
@@ -107,11 +157,48 @@ section, footer{
 
 .middle-content .boxes .box {
     background: black;
-    margin: 4% 0;
+    margin: 3% 1%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
+    width: 15%;
+    padding: 5% 1%;
+}
+
+
+
+/*Middle Section Styles - added by kyle hauenstein*/
+#box1 {
+    background-color: teal;
+}
+#box2 {
+    background-color: gold;
+}
+#box3 {
+    background-color: cadetblue;
+}
+#box4 {
+    background-color: coral;
+}
+#box5 {
+    background-color: crimson;
+}
+#box6 {
+    background-color: forestgreen;
+}
+#box7 {
+    background-color: darkorchid;
+}
+#box8 {
+    background-color: hotpink;
+}
+#box9 {
+    background-color: indigo;
+}
+#box10 {
+    background-color: dodgerblue;
 }
 
 /*Bottom Section Styles*/
@@ -121,11 +208,15 @@ section, footer{
 }
 
 .bottom-content .text-container {
-    width:25%;
+    width:33%;
 }
 
 .bottom-content .text-container:last-child {
     padding-right: 0;
+}
+
+.bottom-content .text-container h2 {
+    margin: 10% auto;
 }
 
 /*Footer Styles*/
@@ -134,7 +225,150 @@ footer {
     background-color: #ff4b00;
 }
 
+footer nav{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer nav a{
+    text-decoration: none;
+    color: white;
+}
+
 /*About Page Styles*/
 
 
+.about-page {
+    border-bottom: 2px solid #ff4b00;
+}
+
+.about-page h2{
+    margin: 3% auto;
+}
+
+.about-page p{
+    margin: 3% auto;
+}
+
+.container.categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.container.categories .topic{
+    width: 45%;
+    margin: 5% 0;
+    border-bottom: 2px solid #ff4b00;
+}
+
+.container.container.categories .topic img{
+    width: 100%;
+}
+.container.categories .topic h2{
+    margin: 2% auto;
+}
+
+.container.categories .topic p{
+    margin: 5% 0;
+}
+
+.bottom-container h2{
+    margin: 3% auto;
+}
+
+.bottom-container p{
+    margin: 3% auto;
+}
+
+
 /*Responsive Styles*/
+
+@media (max-width: 500px) {
+    nav {
+        display: block;
+        justify-content: center;
+    }
+    .links {
+        width: 100%;
+    }
+
+    .links a {
+        margin: 2% auto;
+    }
+
+    .logo {
+        width: 100%;
+        margin: 2% auto;
+        justify-content: center;
+        display: flex;
+    }
+
+    .logo img{
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .about-page h2{
+        text-align: center;
+    }
+
+    .container.categories{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .container.categories .topic{
+        width: 100%;
+    }
+
+    .container.categories .topic h2{
+        text-align: center;
+    }
+
+    .bottom-container h2{
+        text-align: center;
+    }
+
+    footer nav {
+        flex-direction: column;
+    }
+
+    footer nav a{
+        margin: 1% auto
+    }
+
+    .top-content .text-container {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .middle-content .boxes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .middle-content .boxes .box {
+        width: 40%;
+        padding: 10% 0;
+        
+    }  
+    
+    .bottom-content{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .bottom-content .text-container {
+        width: 100%;
+    }
+
+    .bottom-content .text-container h2 {
+        text-align: center;
+    }
+}
